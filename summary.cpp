@@ -31,9 +31,8 @@ int main(int argc, char *argv[])
     string line;
     while (getline(file, line))
     {
-
+        // Split the line into segments
         istringstream iss(line);
-
         string segment;
         vector<string> seglist;
         while (getline(iss, segment, ' '))
@@ -41,6 +40,8 @@ int main(int argc, char *argv[])
             seglist.push_back(segment);
         }
 
+        // Check if the record type is valid
+        // If it is, increment the count for that record type
         if (seglist.size() >= 3)
         {
             string record_type = seglist[2];
@@ -52,6 +53,7 @@ int main(int argc, char *argv[])
         }
     }
 
+    // Print the record counts
     for (const auto &[key, value] : record_count)
     {
         cout << key << " " << value << endl;

@@ -1,0 +1,3 @@
+host1 IN a 192.0.2.1
+host2 IN Cname example.org.
+host3 IN mx 10 mail.example.org.

@@ -1,0 +1,4 @@
+@ IN A 123.0.2.5
+alias IN CNAME example.com.
+www IN A 192.0.2.5
+email IN MX 10 mail.example.com.

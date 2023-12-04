@@ -1,0 +1,3 @@
+@ IN A
+invalid-record
+www IN cs 192.0.2.5
